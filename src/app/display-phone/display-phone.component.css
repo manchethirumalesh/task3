@@ -1,0 +1,29 @@
+label{
+    color: rgba(0, 0, 0, 0.466);
+    font-size: 20px;
+    font-weight: 500;
+    width: 90px;
+
+}
+input{
+    border:none ;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(211, 200, 200, 0.514);
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus{
+    outline: 1.5px solid rgba(131, 116, 138, 0.397);
+    background-color: rgba(233, 233, 240, 0.336);
+}
+
+form{
+    margin-left: 15%;
+}
