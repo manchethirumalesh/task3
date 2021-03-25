@@ -5,10 +5,10 @@
                 <span class="btn addNewPhone" (click)="addform()" >Add new phone</span>
                 <span (click)="submit()" class="btn btn-primary">Submit</span>
            </div> 
-           <div class="form-row mt-2" *ngFor = "let r of phonearray;let i = index">
+           <div class="form-row mt-2" *ngFor = "let phn of phonearray;let i = index">
                 <div class="form-group d-flex">
                     <label>Phone {{i+1}}</label>
-                    <input type="number" class="from-control" name="phone{{i}}" #app [(ngModel)] = "r.phone"  autocomplete="off">
+                    <input type="number" class="from-control" name="phone{{i}}" #app [(ngModel)] = "phn.phone"  autocomplete="off">
                     <span class="icon-x" *ngIf="List" (click)="removeform(i)" ><i class="bi bi-x"></i></span>
                 </div>
             </div>
