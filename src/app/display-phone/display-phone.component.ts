@@ -12,7 +12,7 @@ export class DisplayPhoneComponent implements OnInit {
   PhoneModule = new PhoneModule()
   phonearray:any[] = []
 
-  is = false;
+  List = false;
 
   arr : any[]=[]
 
@@ -27,7 +27,7 @@ export class DisplayPhoneComponent implements OnInit {
     this.PhoneModule = new PhoneModule()
     this.phonearray.push(this.PhoneModule)
     if(this.phonearray.length>0){
-      this.is = true
+      this.List = true
     }
   }
 
@@ -35,7 +35,7 @@ export class DisplayPhoneComponent implements OnInit {
     this.phonearray.splice(index,1)
     console.log("Total Phone Numbers : " + this.phonearray.length)
     if(this.phonearray.length<=1){
-      this.is = false
+      this.List = false
     }
   }
 
